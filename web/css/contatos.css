@@ -1,0 +1,119 @@
+.contato {
+	padding: 40px 0;
+}
+
+.form-c {
+	padding-right: 60px;
+	padding-bottom: 20px;
+	padding-top: 30px;
+}
+
+.form-c label {
+	display: block;
+	color: black;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 18px;
+	margin-bottom: 4px;
+}
+
+.form-c input {
+	display: block;
+	width: 100%;
+	border: 4px solid #825223;
+	background: none;
+	color: black;
+	padding: 10px 10px;
+	margin-bottom: 15px;
+	outline: none;
+	font-size: 14px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.form-c textarea {
+	display: block;
+	width: 100%;
+	height: 120px;
+	border: 4px solid #825223;
+	background: none;
+	color: black;
+	padding: 10px 10px;
+	margin-bottom: 15px;
+	outline: none;
+	font-size: 14px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	max-height: fit-content;
+}
+
+.contato .btn {
+		background: none;
+		color: #825223;
+		border: solid 4px #825223;
+	}
+
+.contato .btn:hover {
+		color: #eb8ea2;
+		border: solid 4px #eb8ea2;;
+	}
+	
+.form-c button {
+		padding: 7px 40px;
+		margin-bottom: 20px;
+	}
+
+.contato_dados {
+	padding: 20px;
+}
+.contato_dados h3 {
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	letter-spacing: .1em;
+	text-align: left;
+	text-transform: uppercase;
+	color: #825223;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.contato_dados span{
+	font-size: 18px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	line-height: 25px;
+	text-align: left;
+	display: block;
+	color: black;
+}
+
+.contato_redes h3 {
+	margin-top: 40px;
+}
+
+.contato_redes ul li {
+	margin-left: -10px;
+}
+
+.circle-i {
+	height: 30px;
+    width: 30px;
+    margin: 10px;
+    background:none;
+    border-radius: 60%;
+    display: inline-block;
+    z-index: 1;
+}
+
+.endereco-catcafe {
+	margin-bottom: 60px;
+}
+
+.contato_redes h3:after {
+	content: "";
+    width: 100px;
+    height: 116px;
+    display: block;
+    background: url("../img/alfinete-cat-prt.png") no-repeat center;
+    position: absolute;
+    top: 700px;
+    right: 400px;
+    z-index: 1;
+}

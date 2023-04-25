@@ -1,0 +1,241 @@
+
+.interna_cardapio {
+	background: url("../img/bg-cardapio.jpg") no-repeat center;
+	background-size: cover;
+}
+
+/* ITENS CARDAPIO*/
+
+.cardapio_item {
+	padding-top: 60px;
+}
+
+.cardapio_item h2 {
+	font-size: 36px;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-weight: bold;
+	position: relative;
+	top: -180px;
+	text-align: center;
+	color: #FFFEF8;
+	margin-bottom: -60px;
+}
+
+.cardapio_item h2:after, .cardapio_item h2:before {
+	content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background:#FFFEF8;
+    margin: 10px auto;
+
+}
+
+.cardapio_icone {
+	background: #825223;
+	padding: 52px 0;
+}
+
+.cardapio_icone img {
+	margin: 0 auto;
+}
+
+.cad_info {
+	background: #825223;
+}
+
+.cad_info p {
+	color: #FFFEF8;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 18px;
+	line-height: 25px;
+	height: 170px;
+	padding: 30px 40px;
+}
+
+.cad_info ul li {
+	background: #FFFEF8;
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: bold;
+	letter-spacing: .1em;
+	float: left;
+	width: 229px;
+	height: 49px;
+	text-align: center;
+	padding-top: 16px;
+}
+
+.cad_info ul li:nth-child(1), .cad_info ul li:nth-child(2){
+	margin-bottom: 2px;
+}
+
+.cad_info ul li:nth-child(even) {
+	margin-left: 2px;
+}
+
+
+.menu_cad p {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.menu_cad p:after {
+	content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: black;
+    margin: 10px auto;
+}
+
+.menu_cad a :hover{
+	color: #eb8ea2;
+}
+
+.menu_cad a {
+	color: black;
+	display: inline-block;
+	margin-left: 600px;
+	margin-bottom: 40px;
+  }
+
+/* RESERVAS */
+
+.reservas {
+	background: #825223;
+	width: 100%;
+}
+
+.reservas h2:after {
+	background: #eb8ea2;
+}
+
+.reservas h2 {
+	padding-top: 15px;
+}
+
+.reservas .subtitulo, .subtitulo:after{
+	text-align: left;
+	margin: 8px 10px;
+	color: #eb8ea2;
+}
+
+.form {
+	padding-right: 60px;
+	padding-bottom: 20px;
+	padding-top: 30px;
+}
+
+.form label {
+	display: block;
+	color: #FFFEF8;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 18px;
+	margin-bottom: 4px;
+}
+
+.form input {
+	display: block;
+	width: 100%;
+	border: 4px solid #FFFEF8;
+	background: none;
+	color: #FFFEF8;
+	padding: 10px 10px;
+	margin-bottom: 15px;
+	outline: none;
+	font-size: 14px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	letter-spacing: .2em;
+}
+
+.form textarea {
+	display: block;
+	width: 100%;
+	height: 120px;
+	border: 4px solid #FFFEF8;
+	background: none;
+	color: #FFFEF8;
+	padding: 10px 10px;
+	margin-bottom: 15px;
+	outline: none;
+	font-size: 14px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn {
+	background: none;
+	color: #FFFEF8;
+	border: solid 4px #FFFEF8;
+}
+
+.form button {
+	padding: 7px 40px;
+	margin-bottom: 20px;
+}
+
+.reservas_dados{
+	background: #FFFEF8;
+	padding: 50px 30px 25px 50px ;
+}
+.reservas_dados h3, .reservas_dados h2 {
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	line-height: 20px;
+	margin-bottom: 15px;
+}
+
+.reservas_dados h2:before {
+	content: "";
+    width: 136px;
+    height: 46px;
+    display: block;
+    background: url("../img/orelinha.jpg") no-repeat center;
+    position: absolute;
+    top: 80px;
+	right: 312px;
+    z-index: 1;
+}
+
+.sala {
+	margin-top: 35px;
+}
+
+.reservas_dados h4 {
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	line-height: 20px;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+.reservas_dados span {
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 15px;
+	text-align: left;
+	display: block;
+}
+
+.reservas_dados .negrito {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.reservas_dados p {
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 20px;
+	text-align: left;
+	font-weight: bold;
+}

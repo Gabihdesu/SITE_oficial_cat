@@ -1,0 +1,72 @@
+/* INTRODUÇÃO - INTERNA sobre*/
+
+.interna_sobre {
+	background: url("../img/bg-sobre.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.missao {
+	padding-top: 60px;
+}
+
+.missao p {
+	font-size: 18px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	line-height: 25px;
+	color: black;
+	text-align:left;
+	margin-bottom: 1em;
+	margin-right: 60px;
+	
+}
+
+.missao ul li {
+	font-size: 18px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	line-height: 26px;
+	color: black;
+
+}
+
+.foto-equipe {
+	padding-top: 20px;
+	margin-bottom: 40px;
+}
+
+.catcafe .subtitulo-interno {
+	text-align: center;
+}
+
+.catcafe p {
+	text-align: justify;
+	font-size: 18px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	line-height: 35px;
+	padding: 10px;
+}
+
+.catcafe .subtitulo-interno:after {
+	margin: 10px auto;
+	
+}
+
+.catcafe .subtitulo-interno:before {
+	content: "";
+    width: 136px;
+    height: 46px;
+    display: block;
+    background: url("../img/orelinha.jpg") no-repeat center;
+    position: absolute;
+    bottom: 310px;
+	right: 520px;
+    z-index: -1;
+	
+}
+
+.foto-equipe img {
+    padding-bottom: 40px;
+}
+
+.footer_sobre {
+	margin-top: 100px;
+}

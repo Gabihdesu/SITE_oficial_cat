@@ -1,0 +1,69 @@
+
+.quote-gatinhos p {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 15px;
+	color: black;
+	text-align: center;
+	font-style: italic;
+	padding-top: 20px;
+}	
+
+.quote-gatinhos cite {
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: .1em;
+	color: black;
+	font-weight: bold;
+	text-align: right;
+	padding-top: 10px;
+	display: block;
+	margin-bottom: 10px;
+	margin-right: 180px;
+}
+
+.quote-gatinhos {
+	padding: 20px;
+}
+
+.gatinhos h2:after {
+	margin: 6px auto 10px auto;
+}
+
+.gatinhos {
+	margin-bottom: 40px;
+}
+
+.gatinhos h2:before {
+	content: "";
+    width: 42px;
+    height: 42px;
+    display: block;
+    background: url("../img/botao-patinha.svg") no-repeat center;
+    position: absolute;
+    bottom: 265px;
+	right: -35px;
+    z-index: 1;
+	
+}
+
+.btn-cat {
+	color:black;
+	border: 3px solid black;
+	font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+	padding: 10px 30px;
+	margin: 10px 390px;
+}
+
+.btn-cat:hover {
+	color: #eb8ea2;
+    border-color: #eb8ea2;
+}
+
+.cat .footer {
+	margin-top: 50px;
+}
+
