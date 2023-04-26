@@ -34,7 +34,7 @@
 
 .cardapio_icone {
 	background: #825223;
-	padding: 52px 0;
+	padding: 49px 0;
 }
 
 .cardapio_icone img {
@@ -75,7 +75,6 @@
 .cad_info ul li:nth-child(even) {
 	margin-left: 2px;
 }
-
 
 .menu_cad p {
 	font-family: Georgia, 'Times New Roman', Times, serif;

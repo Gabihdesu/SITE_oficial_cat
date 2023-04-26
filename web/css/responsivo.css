@@ -1,0 +1,286 @@
+/*Estilo para tablet/similar*/
+
+@media only screen and (min-width:768px) and (max-width: 959px) {
+
+	/*Home*/	
+	.qualidade:after {
+		right: 60px;
+		top: 220px;
+		background: url("../img/mobile/linhas-mb.jpg") no-repeat center;
+
+	}
+
+	.qualidade_lista li {
+		padding: 0 10px;
+		margin-top: 30px;
+	}
+
+	.circle {
+		height: 54px;
+		width: 54px;
+		margin: 0;
+		
+	}
+
+	.circle:hover {
+	background: none;
+	}
+
+	/*Pagina Sobre*/	
+
+	.missao {
+		margin-left: 40px;
+	}
+
+	.missao .foto-equipe {
+		padding: 20px 40px 20px 0px;
+	}
+
+	.catcafe h2{
+		margin-top: 0;
+		padding: 10px;
+	}
+
+	.catcafe .subtitulo-interno:before {
+		bottom: 410px;
+		right: 420px;
+	}
+
+	/*Pagina Cardapio*/	
+
+	.cardapio_item h2 {
+		top: -150px;
+	}
+
+	.cardapio_icone {
+		padding: 20px 0;
+	}
+
+	.cad_info p {
+		font-size: 15px;
+		line-height: 20px;
+		height: 122px;
+		padding: 20px 30px;
+	}
+
+	.cad_info ul li {
+		width: 181px;
+	}
+
+	.menu_cad a {
+		margin-left: 397px;
+	}
+
+	.reservas_dados h2:before {
+		top: 83px;
+		right: 213px;
+	}
+
+	.reservas_dados{
+		padding-bottom: 10px;
+	}
+
+	/*Pagina Gatinhos*/
+
+	  .btn-cat {
+		margin: 10px 320px;
+	  }
+
+
+}
+
+/*Estilo para smartphone - MOBILE*/
+
+@media only screen and (max-width:767px) {
+	
+	.header{
+		position: relative;
+		padding-bottom: 0;
+	}
+
+	.header img {
+		margin: 0 auto 5px auto;
+	}
+
+	.header_menu {
+		text-align: center;
+	}
+
+	.header_menu ul li {
+		margin: 3px;
+		padding-bottom: 3px;
+	}
+
+	.header_menu ul li a {
+		color:#FFFEF8;
+		border: 3px solid #FFFEF8;
+		width: 140px;
+		display: block;
+		float: left;
+	}
+	
+	.header_menu ul li a:hover {
+		border: 2px solid #eb8ea2 ;
+	}
+
+	.header_menu ul li a.menu_ativo {
+		border-color: #eb8ea2;
+	}
+
+
+/*Introdução home*/
+
+	.introducao {
+		margin-top: 0px;
+		padding-top: 20px;
+		background: url("../img/mobile/bg-home-mobile.jpg") no-repeat center;
+		background-size: cover;
+	}
+
+	.introducao h1 {
+		font-size: 40px;
+	}
+
+	.quote-externo {
+		margin-bottom: 25px;
+	}
+
+	.introducao_interna, .interna_sobre, .interna_gatinhos, .interna_cardapio, .interna_contatos {
+		margin-top: 0px;
+	}
+
+
+/*pagina Sobre*/
+	.missao p {
+		margin-right: 0px;
+	}
+
+	.catcafe p {
+		padding: 0px;
+		margin-bottom: 20px;
+	}
+
+	.missao p {
+		margin-bottom: 15px;
+		text-align: justify;
+	}
+
+	.catcafe .subtitulo-interno:before {
+		bottom: 730px;
+		right: 115px;
+	}
+
+/*Qalidade Home*/
+	.qualidade:after {
+		display: none;
+	}
+
+	.call {
+		padding-top: 20px;
+	}
+
+ /*Footer*/
+	.circle {
+		height: 54px;
+		width: 54px;
+		margin: 2px;
+		
+	}
+
+	.circle:hover {
+	background: none;
+	}
+
+	.footer h3 {
+		padding-top: 10px;
+	}
+
+  /*Pagina Cardapio*/
+
+	.cardapio_item h2 {
+		top: -110px;
+		margin-bottom: -75px;
+	}
+
+	.cardapio_icone {
+		padding: 20px 0;
+	}
+
+	.cad_info p {
+		font-size: 15px;
+		line-height: 20px;
+		height: auto;
+		padding: 20px 30px;
+	}
+
+	.cad_info ul li {
+		width: 149px;
+		font-size: 14px;
+		border: 2px solid #825223;
+		padding-top:14px;
+	}
+
+	.menu_cad a {
+		margin-left: 300px;
+	}
+
+	.reservas_dados h2:before {
+		top: 630px;
+		right: 150px;
+	}
+
+	.reservas_dados{
+		padding-bottom: 10px;
+	}
+	
+	.form {
+		padding-right: 0px;
+	}
+	
+	/*Pagina Gatinhos*/
+
+	.quote-gatinhos cite {
+		margin-right: 0px;
+		margin-top: 5px;
+	}
+
+	.btn-cat {
+		margin: 10px 80px;
+	  }
+
+	  .gatinhos h2:before {
+		bottom:300px;
+		right: -43px;
+	  }
+
+/*Pagina Contatos*/
+
+.contato_redes h3:after {
+	top: 970px;
+    right: 80px;
+	background: url("../img/alfinete-cat-mb.png") no-repeat center;
+
+}
+
+.form-c {
+	padding-right: 0px;
+}
+
+.form-c button {
+	margin-bottom: 0px;
+}
+
+.contato_dados {
+	padding: 5px;
+}
+
+.contato_redes h3 {
+	margin-top: 60px;
+}
+
+.circle-i {
+	margin: 8px;
+}
+
+
+}
