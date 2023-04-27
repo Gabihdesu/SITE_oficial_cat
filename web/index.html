@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/grid.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsivo.css">
+        <script>document.documentElement.classList.add("js");</script>
     </head>
         <body>
             <header class="header">
@@ -28,17 +29,17 @@
 <!--INTRODUÇÃO--> 
             <section class="introducao">
                 <div class="container">
-                    <h1>Cafés artesanais  + Gatos</h1>
-                    <blockquote class="quote-externo">
+                    <h1 data-anime="400" class="fadeInDow">Cafés artesanais  + Gatos</h1>
+                    <blockquote data-anime="800" class="quote-externo fadeInDow">
                         <p>“Um café e um amor. Quentes, por favor. Pra ter calma nos dias frios, pra dar colo quando as coisas estiverem por um fio.”</p>
                         <cite>Caio Fernando Abreu</cite>
                     </blockquote>
-                    <a href="reservas.html" class="btn">Reservas</a>
+                    <a data-anime="1200" href="reservas.html" class="btn">Reservas</a>
                 </div>
             </section>
 
 <!--CAFÉS CARDAPIO--> 
-            <section class="cafes container">
+            <section class="cafes container fadeInDow" data-anime="1600">
                 <h2 class="subtitulo">Cafés</h2>
                 <ul class="cafes_lista">
                     <li class="grid-1-3">
@@ -163,5 +164,7 @@
                 </div>
             </footer>
 
+        <script src="./js/simple-anime.js"></script>     
+        <script src="./js/script.js"></script>
         </body>
 </html>

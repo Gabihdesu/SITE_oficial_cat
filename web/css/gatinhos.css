@@ -5,7 +5,9 @@
 	color: black;
 	text-align: center;
 	font-style: italic;
-	padding-top: 20px;
+	padding: 20px;
+	margin-left: 150px;
+	margin-right: 150px;
 }	
 
 .quote-gatinhos cite {
@@ -23,6 +25,7 @@
 
 .quote-gatinhos {
 	padding: 20px;
+	width: 100%;
 }
 
 .gatinhos h2:after {
@@ -31,19 +34,6 @@
 
 .gatinhos {
 	margin-bottom: 40px;
-}
-
-.gatinhos h2:before {
-	content: "";
-    width: 42px;
-    height: 42px;
-    display: block;
-    background: url("../img/botao-patinha.svg") no-repeat center;
-    position: absolute;
-    bottom: 265px;
-	right: -35px;
-    z-index: 1;
-	
 }
 
 .btn-cat {

@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/sobre.css">
         <link rel="stylesheet" href="css/responsivo.css">
+        <script>document.documentElement.classList.add("js");</script>
     </head>
         <body>
             <header class="header">
@@ -30,12 +31,12 @@
 <!--INTRODUÇÃO - INTERNA--> 
             <section class="introducao-interna interna_sobre">
                 <div class="container">
-                    <h1>Sobre</h1>
-                    <p>Conheça mais sobre nossa história.</p>            
+                    <h1 data-anime="400" class="fadeInDown">Sobre</h1>
+                    <p data-anime="800" class="fadeInDown">Conheça mais sobre nossa história.</p>            
                 </div>
             </section>
 
-            <section class="missao container">
+            <section class="missao container fadeInDown" data-anime="1200">
                 <div class="grid-10">
                     <h2 class="subtitulo-interno">História, Missão e Visão</h2>
                     <p>Surgimos com o propósito de dar lar aos Bixanos resgatados das ruas e conecta-los às pessoas apaixonadas por gatos !</p>
@@ -109,5 +110,7 @@
                 </footer>
             </section>
 
+            <script src="./js/simple-anime.js"></script>     
+            <script src="./js/script.js"></script>
         </body>
 </html>

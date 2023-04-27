@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/cardapio.css">
         <link rel="stylesheet" href="css/gatinhos.css">
         <link rel="stylesheet" href="css/responsivo.css">
+        <script>document.documentElement.classList.add("js");</script>
     </head>
         <body>
             <header class="header">
@@ -31,20 +32,34 @@
 <!--INTRODUÇÃO - INTERNA--> 
             <section class="interna_gatinhos">
                 <div class="container">
-                    <h1>Gatinhos</h1>
-                    <p>Conheça os bichanos mais fofos de São Paulo <p>            
+                    <h1 class="fadeInDown" data-anime="400">Gatinhos</h1>
+                    <p class="fadeInDown" data-anime="800">Conheça os bichanos mais fofos de São Paulo <p>            
                 </div>
             </section>
 
-                <blockquote class="quote-gatinhos container">
-                    <p>“Não é você que escolhe o gato, o gato escolhe você.”</p>
-                    <cite>Gabriela M. Santiago</cite>
+            <section class="container fadeInDown" data-slide="quote" data-anime="1200"> 
+                <blockquote class="quote-gatinhos">
+                <p>“Não é você que escolhe o gato, o gato escolhe você.”</p>
+                <cite>Gabriela M. Santiago</cite>
                 </blockquote>
+                
+                <blockquote class="quote-gatinhos">
+                <p>“Gatos amam mais as pessoas do que elas permitiriam. Mas eles têm sabedoria suficiente para manter isso em segredo.”</p>
+                <cite>Mary Wilkins</cite>
+                </blockquote>
+                    
+                <blockquote class="quote-gatinhos">
+                <p>“Os gatos te fazem pensar que eles são durões e não precisam de ninguém. Mas tudo que eles querem é que você pense o contrário.”</p>
+                <cite>Fernanda Roldi</cite>
+                </blockquote>
+            </section>
+               
+
 
 <!--GATINHOS FOTOS-->             
 
 <section class="gatinhos">
-    <div class="container">
+    <div class="container" data-slide="gatinhos">
         <h2 class="subtitulo">Nossos Bixanos</h2>
         <ul class="gatinhos_lista">
             <li class="grid-8">
@@ -67,41 +82,45 @@
 </div>
 
 
-
 <!--FOOTER/ RODAPE-->
-<footer class="cat">
-    <div class="footer">
-        <div class="container">
-            <div class="grid-8 footer_historia">
-                <h3>Nossa História</h3>
-                <p>Somos movidos por duas paixões que se completam, o amor por um café quentinho e o aconchego de um pet felino.</p>
-            </div>
+        <footer class="cat">
+            <div class="footer">
+                <div class="container">
+                    <div class="grid-8 footer_historia">
+                        <h3>Nossa História</h3>
+                        <p>Somos movidos por duas paixões que se completam, o amor por um café quentinho e o aconchego de um pet felino.</p>
+                    </div>
 
-            <div class="grid-4 footer_contato">
-                <h3>Contato</h3>
-                <ul>
-                    <li>- 21 99999-9999</li>
-                    <li>- contato@catcaffee.com</li>
-                    <li>- São Paulo, SP</li>
-                </ul>
+                    <div class="grid-4 footer_contato">
+                        <h3>Contato</h3>
+                        <ul>
+                            <li>- 21 99999-9999</li>
+                            <li>- contato@catcaffee.com</li>
+                            <li>- São Paulo, SP</li>
+                        </ul>
+                    </div>
+                    <div class="grid-4 footer_redes">
+                        <h3>Redes Sociais</h3>
+                        <ul>
+                            <div class="circle">
+                            <li><a href="http://whatsapp.com"> <img src="img/redes-sociais/whats.svg" alt="WhatsApp"></a></li></div>
+                            <div class="circle">
+                            <li><a href="http://instagram.com"> <img src="img/redes-sociais/insta.svg" alt="Instagram"></a></li></div>
+                            <div class="circle">
+                            <li><a href="http://youtube.com"> <img src="img/redes-sociais/youtube.svg" alt="Youtube"></a></li></div>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="grid-4 footer_redes">
-                <h3>Redes Sociais</h3>
-                <ul>
-                    <div class="circle">
-                    <li><a href="http://whatsapp.com"> <img src="img/redes-sociais/whats.svg" alt="WhatsApp"></a></li></div>
-                    <div class="circle">
-                    <li><a href="http://instagram.com"> <img src="img/redes-sociais/insta.svg" alt="Instagram"></a></li></div>
-                    <div class="circle">
-                    <li><a href="http://youtube.com"> <img src="img/redes-sociais/youtube.svg" alt="Youtube"></a></li></div>
-                </ul>
+            <div class="copy">
+                <div class="container">
+                    <p class="grid-16">CatCaffeedesu 2023 - Alguns direitos reservados.</p>
             </div>
-        </div>
-    </div>
-    <div class="copy">
-        <div class="container">
-            <p class="grid-16">CatCaffeedesu 2023 - Alguns direitos reservados.</p>
-    </div>
-</footer>
+        </footer>
+
+        <script src="./js/simple-anime.js"></script>     
+        <script src="./js/simple-slide.js"></script>    
+        <script src="./js/script.js"></script>
+        
         </body>
 </html>

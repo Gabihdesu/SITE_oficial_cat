@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/cardapio.css">
         <link rel="stylesheet" href="css/responsivo.css">
+        <script>document.documentElement.classList.add("js");</script>
     </head>
         <body>
             <header class="header">
@@ -29,30 +30,36 @@
     
             <section class="introducao_reservas">
                 <div>
-                    <h1>Reservas</h1>        
+                    <h1 class="fadeInDown" data-anime="400">Reservas</h1>        
                 </div>
             </section>
 <!--RESERVAS--> 
 
-            <section class="reservas">
+            <section class="reservas fadeInDown" data-anime="800">
                 <div class="container">
                     <h2 class="subtitulo">Reservas</h2>
-                    <form id="form_reservas" class="form grid-8">
+                    <form id="form_reservas" method="POST" action="./enviar.php" class="form grid-8 formphp">
                         <label for="nome">Nome</label>
-                        <input type="text" id="nome">
+                        <input type="text" id="nome" name="nome" required>
                         <label for="e-mail">E-mail</label>
-                        <input type="email" id="e-mail" autocomplete="email">
+                        <input type="email" id="e-mail" name="email" autocomplete="email" required>
                         <label for="telefone">Telefone</label>
-                        <input type="tel" id="telefone" autocomplete="tel">
+                        <input type="tel" id="telefone" name="telefone" autocomplete="tel">
+
+                        <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+                        <input type="text" class="nao-aparece" name="leaveblank">
+                        <label class="nao-aparece">Se você não é um robô, não mude esse campo.</label>
+                        <input type="text" class="nao-aparece" name="dontchange" value="http://">
+
                         <label for="mensagem">Mensagem</label>
-                        <textarea id="mensagem"></textarea>
-                        <button type="submit" class="btn">Enviar</button>
-                    </form>       
-                    <div class="reservas_dados grid-8"> 
+                        <textarea id="mensagem" name="mensagem" required></textarea>
+                        <button id="enviar" name="enviar" type="submit" class="btn">Enviar</button>
+                    </form>    
+                    <div class="reservas_dados grid-8">
                             <h2>Dados</h2>
                             <span>+55 (11) 999485313</span>
                             <span>reservas@catcaffee.com</span>
-                            <div class="sala">
+                        <div class="sala">
                             <h3>Sala dos Gatos</h3>
                             <h4>15 min</h4>
                             <span class="negrito"> - Adulto + criança (até 10 anos): 15,50 R$</span>
@@ -61,7 +68,7 @@
                             <span class="negrito"> - Adulto + criança (até 10 anos): 25,00 R$</span>
                             <span>Adulto: 20,00 R$</span>
                             <p>*Crianças de até 10 anos devem entrar acompanhadas de um responsável.</p>
-                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -110,4 +117,7 @@
     </div>
 </footer>
         </body>
+
+        <script src="./js/simple-anime.js"></script>     
+        <script src="./js/script.js"></script>
 </html>
