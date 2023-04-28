@@ -19,6 +19,7 @@ if (window.SimpleAnime) {
 	new SimpleAnime();
 }
 
+
 if(window.SimpleForm) {
 	new SimpleForm({
 	  form: ".formphp", // seletor do formulário

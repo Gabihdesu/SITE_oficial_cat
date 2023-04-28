@@ -563,3 +563,11 @@ img {
     position: absolute;
     height: 0px;
 }
+
+#form-sucesso {
+    color:darkgreen;
+}
+
+#form-erro {
+    color:darkred;
+}

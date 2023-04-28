@@ -15,8 +15,8 @@ $email_pass = "Cuscuz203040!!"; // Senha do e-mail
 $site_name = "CatCaffeeDesu"; // Nome do Site
 $site_url = "www.catcaffeedesu.com"; // URL do Site
 
-$host_smtp = "smtp.office365.com"; // HOST SMTP Ex: smtp.domain.com.br
-$host_port = "587"; // Porta do Host, geralmente 465 ou 587
+$host_smtp = "http://localhost"; // HOST SMTP Ex: smtp.domain.com.br
+$host_port = "80"; // Porta do Host, geralmente 465 ou 587
 
 
 // Não mudar abaixo:
