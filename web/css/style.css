@@ -1,3 +1,91 @@
+/*----- GRID ----*/
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+  }
+  
+  .container {
+      width: 960px;
+      margin: 0 auto;
+      padding: 0px;
+      position: relative;
+  }
+  
+  .container:after, .container:before {
+      content: " ";
+      display: table;
+  }
+  
+  .container:after {
+      clear: both;
+  }
+  
+  .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .grid-1-3 {
+      float: left;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+  
+  .grid-1 	{width: 40px;}
+  .grid-2 	{width: 100px;}
+  .grid-3 	{width: 160px;}
+  .grid-4 	{width: 220px;}
+  .grid-5 	{width: 280px;}
+  .grid-6 	{width: 340px;}
+  .grid-7 	{width: 400px;}
+  .grid-8 	{width: 460px;}
+  .grid-9 	{width: 520px;}
+  .grid-10 	{width: 580px;}
+  .grid-11 	{width: 640px;}
+  .grid-12 	{width: 700px;}
+  .grid-13 	{width: 760px;}
+  .grid-14 	{width: 820px;}
+  .grid-15 	{width: 880px;}
+  .grid-16 	{width: 940px;}
+  .grid-1-3	{width: 300px;}
+  
+  @media only screen and (min-width: 788px) and (max-width: 979px) {
+  
+      .container {
+          width: 768px;
+      }
+      
+      .grid-1		{width: 28px;}
+      .grid-2		{width: 76px;}
+      .grid-3		{width: 124px;}
+      .grid-4		{width: 172px;}
+      .grid-5		{width: 220px;}
+      .grid-6		{width: 268px;}
+      .grid-7		{width: 316px;}
+      .grid-8		{width: 364px;}
+      .grid-9		{width: 412px;}
+      .grid-10	{width: 460px;}
+      .grid-11	{width: 508px;}
+      .grid-12	{width: 556px;}
+      .grid-13	{width: 604px;}
+      .grid-14	{width: 652px;}
+      .grid-15	{width: 700px;}
+      .grid-16	{width: 748px;}
+      .grid-1-3	{width: 236px;}
+      
+      }
+      
+      @media only screen and (max-width: 787px) {
+      .container {
+          width: 300px;
+      }
+      
+      .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .grid-1-3 {
+          width: 300px;
+          margin: 0 0 20px 0;
+          float: none;
+      }
+      
+      }
+  
+
 /* ESTILOS GERAIS */
 
 body {
@@ -571,3 +659,784 @@ img {
 #form-erro {
     color:darkred;
 }
+
+/* INTRODUÇÃO - INTERNA sobre*/
+
+.interna_sobre {
+	background: url("../img/bg-sobre.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.missao {
+	padding-top: 60px;
+}
+
+.missao p {
+	font-size: 18px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	line-height: 25px;
+	color: black;
+	text-align:left;
+	margin-bottom: .1em;
+	margin-right: 60px;
+	
+}
+
+.missao ul li {
+	font-size: 18px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	line-height: 26px;
+	color: black;
+
+}
+
+.foto-equipe {
+	padding-top: 20px;
+	margin-bottom: 40px;
+}
+
+.catcafe .subtitulo-interno {
+	text-align: center;
+}
+
+.catcafe p {
+	text-align: justify;
+	font-size: 18px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	line-height: 35px;
+	padding: 10px;
+}
+
+.catcafe .subtitulo-interno:after {
+	margin: 10px auto;
+	
+}
+
+.catcafe .subtitulo-interno:before {
+	content: "";
+    width: 136px;
+    height: 46px;
+    display: block;
+    background: url("../img/orelinha.jpg") no-repeat center;
+    position: absolute;
+    bottom: 310px;
+	right: 520px;
+    z-index: -1;
+	
+}
+
+.foto-equipe img {
+    padding-bottom: 40px;
+}
+
+.footer_sobre {
+	margin-top: 100px;
+}
+
+
+.interna_cardapio {
+	background: url("../img/bg-cardapio.jpg") no-repeat center;
+	background-size: cover;
+}
+
+/* ITENS CARDAPIO*/
+
+.cardapio_item {
+	padding-top: 60px;
+}
+
+.cardapio_item h2 {
+	font-size: 36px;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-weight: bold;
+	position: relative;
+	top: -180px;
+	text-align: center;
+	color: #FFFEF8;
+	margin-bottom: -60px;
+}
+
+.cardapio_item h2:after, .cardapio_item h2:before {
+	content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background:#FFFEF8;
+    margin: 10px auto;
+
+}
+
+.cardapio_icone {
+	background: #825223;
+	padding: 49px 0;
+}
+
+.cardapio_icone img {
+	margin: 0 auto;
+}
+
+.cad_info {
+	background: #825223;
+}
+
+.cad_info p {
+	color: #FFFEF8;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 18px;
+	line-height: 25px;
+	height: 170px;
+	padding: 30px 40px;
+}
+
+.cad_info ul li {
+	background: #FFFEF8;
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: bold;
+	letter-spacing: .1em;
+	float: left;
+	width: 229px;
+	height: 49px;
+	text-align: center;
+	padding-top: 16px;
+}
+
+.cad_info ul li:nth-child(1), .cad_info ul li:nth-child(2){
+	margin-bottom: 2px;
+}
+
+.cad_info ul li:nth-child(even) {
+	margin-left: 2px;
+}
+
+.menu_cad p {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.menu_cad p:after {
+	content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: black;
+    margin: 10px auto;
+}
+
+.menu_cad a :hover{
+	color: #eb8ea2;
+}
+
+.menu_cad a {
+	color: black;
+	display: inline-block;
+	margin-left: 600px;
+	margin-bottom: 40px;
+  }
+
+/* RESERVAS */
+
+.reservas {
+	background: #825223;
+	width: 100%;
+}
+
+.reservas h2:after {
+	background: #eb8ea2;
+}
+
+.reservas h2 {
+	padding-top: 15px;
+}
+
+.reservas .subtitulo-interno, .subtitulo-interno:after{
+	color: #eb8ea2;
+}
+
+.form {
+	padding-right: 60px;
+	padding-bottom: 20px;
+	padding-top: 30px;
+}
+
+.form label {
+	display: block;
+	color: #FFFEF8;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 18px;
+	margin-bottom: 4px;
+}
+
+.form input {
+	display: block;
+	width: 100%;
+	border: 4px solid #FFFEF8;
+	background: none;
+	color: #FFFEF8;
+	padding: 10px 10px;
+	margin-bottom: 15px;
+	outline: none;
+	font-size: 14px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	letter-spacing: .2em;
+}
+
+.form textarea {
+	display: block;
+	width: 100%;
+	height: 120px;
+	border: 4px solid #FFFEF8;
+	background: none;
+	color: #FFFEF8;
+	padding: 10px 10px;
+	margin-bottom: 15px;
+	outline: none;
+	font-size: 14px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn {
+	background: none;
+	color: #FFFEF8;
+	border: solid 4px #FFFEF8;
+}
+
+.form button {
+	padding: 7px 40px;
+	margin-bottom: 20px;
+}
+
+.reservas_dados{
+	background: #FFFEF8;
+	padding: 50px 30px 25px 50px ;
+}
+.reservas_dados h3, .reservas_dados h2 {
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	line-height: 20px;
+	margin-bottom: 15px;
+}
+
+.reservas_dados h2:before {
+	content: "";
+    width: 136px;
+    height: 46px;
+    display: block;
+    background: url("../img/orelinha.jpg") no-repeat center;
+    position: absolute;
+    top: 80px;
+	right: 312px;
+    z-index: 1;
+}
+
+.sala {
+	margin-top: 35px;
+}
+
+.reservas_dados h4 {
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	line-height: 20px;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+.reservas_dados span {
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 15px;
+	text-align: left;
+	display: block;
+}
+
+.reservas_dados .negrito {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.reservas_dados p {
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 20px;
+	text-align: left;
+	font-weight: bold;
+}
+
+
+.quote-gatinhos p {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 15px;
+	color: black;
+	text-align: center;
+	font-style: italic;
+	padding: 20px;
+	margin-left: 150px;
+	margin-right: 150px;
+}	
+
+.quote-gatinhos cite {
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: .1em;
+	color: black;
+	font-weight: bold;
+	text-align: right;
+	padding-top: 10px;
+	display: block;
+	margin-bottom: 10px;
+	margin-right: 180px;
+}
+
+.quote-gatinhos {
+	padding: 20px;
+	width: 100%;
+}
+
+.gatinhos h2:after {
+	margin: 6px auto 10px auto;
+}
+
+.gatinhos {
+	margin-bottom: 40px;
+}
+
+.btn-cat {
+	color:black;
+	border: 3px solid black;
+	font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+	padding: 10px 30px;
+	margin: 10px 390px;
+}
+
+.btn-cat:hover {
+	color: #eb8ea2;
+    border-color: #eb8ea2;
+}
+
+.cat .footer {
+	margin-top: 50px;
+}
+
+.contato {
+	padding: 40px 0;
+}
+
+.form-c {
+	padding-right: 60px;
+	padding-bottom: 20px;
+	padding-top: 30px;
+}
+
+.form-c label {
+	display: block;
+	color: black;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 18px;
+	margin-bottom: 4px;
+}
+
+.form-c input {
+	display: block;
+	width: 100%;
+	border: 4px solid #825223;
+	background: none;
+	color: black;
+	padding: 10px 10px;
+	margin-bottom: 15px;
+	outline: none;
+	font-size: 14px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.form-c textarea {
+	display: block;
+	width: 100%;
+	height: 120px;
+	border: 4px solid #825223;
+	background: none;
+	color: black;
+	padding: 10px 10px;
+	margin-bottom: 15px;
+	outline: none;
+	font-size: 14px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	max-height: fit-content;
+}
+
+.contato .btn {
+		background: none;
+		color: #825223;
+		border: solid 4px #825223;
+	}
+
+.contato .btn:hover {
+		color: #eb8ea2;
+		border: solid 4px #eb8ea2;;
+	}
+	
+.form-c button {
+		padding: 7px 40px;
+		margin-bottom: 20px;
+	}
+
+.contato_dados {
+	padding: 20px;
+}
+.contato_dados h3 {
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	letter-spacing: .1em;
+	text-align: left;
+	text-transform: uppercase;
+	color: #825223;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.contato_dados span{
+	font-size: 18px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	line-height: 25px;
+	text-align: left;
+	display: block;
+	color: black;
+}
+
+.contato_redes h3 {
+	margin-top: 40px;
+}
+
+.contato_redes ul li {
+	margin-left: -10px;
+}
+
+.circle-i {
+	height: 30px;
+    width: 30px;
+    margin: 10px;
+    background:none;
+    border-radius: 60%;
+    display: inline-block;
+    z-index: 1;
+}
+
+.endereco-catcafe {
+	margin-bottom: 60px;
+}
+
+.contato_redes h3:after {
+	content: "";
+    width: 100px;
+    height: 116px;
+    display: block;
+    background: url("../img/alfinete-cat-prt.png") no-repeat center;
+    position: absolute;
+    top: 700px;
+    right: 400px;
+    z-index: 1;
+}
+
+
+/*Estilo para tablet/similar*/
+
+@media only screen and (min-width:768px) and (max-width: 959px) {
+
+	/*Home*/	
+	.qualidade:after {
+		right: 60px;
+		top: 220px;
+		background: url("../img/mobile/linhas-mb.jpg") no-repeat center;
+
+	}
+
+	.qualidade_lista li {
+		padding: 0 10px;
+		margin-top: 30px;
+	}
+
+	.circle {
+		height: 54px;
+		width: 54px;
+	}
+
+	.circle:hover {
+	background: none;
+	}
+
+	/*Pagina Sobre*/	
+
+	.missao {
+		margin-left: 40px;
+	}
+
+	.missao .foto-equipe {
+		padding: 20px 40px 20px 0px;
+	}
+
+	.catcafe h2{
+		margin-top: 0;
+		padding: 10px;
+	}
+
+	.catcafe .subtitulo-interno:before {
+		bottom: 410px;
+		right: 420px;
+	}
+
+	/*Pagina Cardapio*/	
+
+	.cardapio_item h2 {
+		top: -150px;
+	}
+
+	.cardapio_icone {
+		padding: 20px 0;
+	}
+
+	.cad_info p {
+		font-size: 15px;
+		line-height: 20px;
+		height: 122px;
+		padding: 20px 30px;
+	}
+
+	.cad_info ul li {
+		width: 181px;
+	}
+
+	.menu_cad a {
+		margin-left: 397px;
+	}
+
+	.reservas_dados h2:before {
+		top: 83px;
+		right: 213px;
+	}
+
+	.reservas_dados{
+		padding-bottom: 10px;
+	}
+
+	/*Pagina Gatinhos*/
+
+	  .btn-cat {
+		margin: 10px 320px;
+	  }
+
+
+}
+
+/*Estilo para smartphone - MOBILE*/
+
+@media only screen and (max-width:767px) {
+	
+	.header{
+		position: relative;
+		padding-bottom: 0;
+	}
+
+	.header img {
+		margin: 0 auto 5px auto;
+	}
+
+	.header_menu {
+		text-align: center;
+	}
+
+	.header_menu ul li {
+		margin: 3px;
+		padding-bottom: 3px;
+	}
+
+	.header_menu ul li a {
+		color:#FFFEF8;
+		border: 3px solid #FFFEF8;
+		width: 140px;
+		display: block;
+		float: left;
+	}
+	
+	.header_menu ul li a:hover {
+		border: 2px solid #eb8ea2 ;
+	}
+
+	.header_menu ul li a.menu_ativo {
+		border-color: #eb8ea2;
+	}
+
+
+/*Introdução home*/
+
+	.introducao {
+		margin-top: 0px;
+		padding-top: 20px;
+		background: url("../img/mobile/bg-home-mobile.jpg") no-repeat center;
+		background-size: cover;
+	}
+
+	.introducao h1 {
+		font-size: 40px;
+	}
+
+	.quote-externo {
+		margin-bottom: 25px;
+	}
+
+	.introducao_interna, .interna_sobre, .interna_gatinhos, .interna_cardapio, .interna_contatos {
+		margin-top: 0px;
+	}
+
+
+/*pagina Sobre*/
+	.missao p {
+		margin-right: 0px;
+	}
+
+	.catcafe p {
+		padding: 0px;
+		margin-bottom: 20px;
+	}
+
+	.missao p {
+		margin-bottom: 15px;
+		text-align: justify;
+	}
+
+	.catcafe .subtitulo-interno:before {
+		bottom: 730px;
+		right: 115px;
+	}
+
+/*Qalidade Home*/
+	.qualidade:after {
+		display: none;
+	}
+
+	.call {
+		padding-top: 20px;
+	}
+
+ /*Footer*/
+	.circle {
+		height: 54px;
+		width: 54px;
+		margin: 2px;
+		
+	}
+
+	.circle:hover {
+	background: none;
+	}
+
+	.footer h3 {
+		padding-top: 10px;
+	}
+
+  /*Pagina Cardapio*/
+
+	.cardapio_item h2 {
+		top: -110px;
+		margin-bottom: -75px;
+	}
+
+	.cardapio_icone {
+		padding: 20px 0;
+	}
+
+	.cad_info p {
+		font-size: 15px;
+		line-height: 20px;
+		height: auto;
+		padding: 20px 30px;
+	}
+
+	.cad_info ul li {
+		width: 149px;
+		font-size: 14px;
+		border: 2px solid #825223;
+		padding-top:14px;
+	}
+
+	.menu_cad a {
+		margin-left: 300px;
+	}
+
+	.reservas_dados h2:before {
+		top: 630px;
+		right: 150px;
+	}
+
+	.reservas_dados{
+		padding-bottom: 10px;
+	}
+	
+	.form {
+		padding-right: 0px;
+	}
+	
+	/*Pagina Gatinhos*/
+
+	.quote-gatinhos cite {
+		margin-right: 0px;
+		margin-top: 5px;
+	}
+
+	.btn-cat {
+		margin: 10px 80px;
+	  }
+
+	  
+	.quote-gatinhos p {
+		margin-left:0px;
+		margin-right: 0px;
+		padding: 0px;
+	  }
+	  
+
+/*Pagina Contatos*/
+
+.contato_redes h3:after {
+	top: 970px;
+    right: 80px;
+	background: url("../img/alfinete-cat-mb.png") no-repeat center;
+
+}
+
+.form-c {
+	padding-right: 0px;
+}
+
+.form-c button {
+	margin-bottom: 0px;
+}
+
+.contato_dados {
+	padding: 5px;
+}
+
+.contato_redes h3 {
+	margin-top: 60px;
+}
+
+.circle-i {
+	margin: 8px;
+}
+
+
+}
+
